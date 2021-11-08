@@ -1,6 +1,18 @@
 ## General
  
- 
+  
+### Protocols
+HTTP 80
+HTTPS 443
+Handshake -> 
+Request:
+Response:
+```
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+```
+### SOLID
+
 The SOLID design principle includes these five principles:
 ### Single Responsibility Principle
 The Single Responsibility Principle is the most abstract of the bunch. It helps keep classes and methods small and maintainable. In addition to keeping classes small and focused it also makes them easier to understand.
@@ -101,18 +113,12 @@ Here are a couple of classic cases:
 2.	Use cases where the data in a big table can be divided into two or more segments that would benefit the majority of the search patterns. A common example used to describe a scenario like this is that of a company whose customers are evenly spread across the United States and searches to a target table involves the customer ZIP code. A shard then could be used to host entries of customers located on the East coast and another for customers on the West coast.
  
  
-Security
-XSS
-Cross-Site Request Forgery (CSRF) is an attack that allows a malicious user to spoof legitimate requests to your server, masquerading ...
- 
-Protocols
-HTTP
-HTTPS 443
-Handshake -> 
-HTTP/1.1 200 OK
-Content-Type: text/html; charset=utf-8
+## Security
+* XSS
+* Cross-Site Request Forgery (CSRF) is an attack that allows a malicious user to spoof legitimate requests to your server, masquerading ...
 
  
-#Blockchain
+## Blockchain
  
-.
+DAO
+

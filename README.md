@@ -75,6 +75,7 @@ Algorithms
 
 <details>
 <summary>QuickSort</summary>
+
 ```ruby
    def   quicksort(arr, first, last)
 	  if first < last
@@ -108,6 +109,7 @@ Algorithms
 	  return p_index
 	end
 ```
+			     
 </details>
 
 ### Fault tolerance

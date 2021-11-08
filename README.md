@@ -14,16 +14,16 @@ Content-Type: text/html; charset=utf-8
 ### SOLID
 
 The SOLID design principle includes these five principles:
-### Single Responsibility Principle
+#### Single Responsibility Principle
 The Single Responsibility Principle is the most abstract of the bunch. It helps keep classes and methods small and maintainable. In addition to keeping classes small and focused it also makes them easier to understand.
 o	
-### Open/Closed Principle
+#### Open/Closed Principle
 The Open/Closed Principle states that classes or methods should be open for extension, but closed for modification. This tells us we should strive for modular designs that make it possible for us to change the behavior of the system without making modifications to the classes themselves. This is generally achieved through the use of patterns such as the strategy pattern. Let’s look at an example of some code that is violating the Open/Closed Principle:
-### Liskov Substitution Principle
-### Interface Segregation Principle
-### Dependency Inversion Principle
+#### Liskov Substitution Principle
+#### Interface Segregation Principle
+#### Dependency Inversion Principle
 
-# Parallelism and Concurrency
+### Parallelism and Concurrency
 Threads
 Threads are useful for IO bound applications: DB, API, File system
 Wait for thread – thread.join	
@@ -31,6 +31,10 @@ GIL
 
 ## Ruby
 * Inheritance
+* Composition
+  * Include
+  * Extends
+  * Prepend
 * Polymorphism
 * Incapsulation
 * Design pattern
@@ -41,18 +45,22 @@ GIL
 * N+1
   * Preload loads the association data in a separate query
 
-### Equality
-== At the Object level, == returns true only if obj and other are the same object. Typically, this method is overridden in descendant classes to provide class-specific meaning.
-=== For class Object, effectively the same as calling #==, but typically overridden by descendants to provide meaningful semantics in case statements.
-eql? — Hash e equal? — identity comparison
-equal? Unlike ==, the equal? method should never be overridden by subclasses: it is used to determine object identity (that is, a.equal?(b) iff a is the same object as b). quality
+## Rails
 
-inheritance, composition (include vs extends vs prepend)
+![image](https://user-images.githubusercontent.com/1765991/140758550-803f72d0-160a-494b-82e5-522b9dbd8b1f.png)
+
+### Equality
+`==` At the Object level, `==` returns true only if obj and other are the same object. Typically, this method is overridden in descendant classes to provide class-specific meaning.
+`===` For class Object, effectively the same as calling `#==`, but typically overridden by descendants to provide meaningful semantics in case statements.
+`eql?` — Hash e equal? — identity comparison
+`equal?` Unlike ==, the equal? method should never be overridden by subclasses: it is used to determine object identity (that is, `a.equal?(b)` if `a` is the same object as `b`). quality
 
 Algorithms
 
+<details>
+<summary>QuickSort</summary>
 ```ruby
-def     quicksort(arr, first, last)
+   def   quicksort(arr, first, last)
 	  if first < last
 	    p_index = partition(arr, first, last)
 	    quicksort(arr, first, p_index - 1)
@@ -84,6 +92,7 @@ def     quicksort(arr, first, last)
 	  return p_index
 	end
 ```
+</details>
 
 ### Fault tolerance
 

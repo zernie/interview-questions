@@ -3,9 +3,15 @@
   
 ### Protocols
 HTTP 80
+
 HTTPS 443
 Handshake -> 
 Request:
+```
+GET /doc/ HTTP/1.1
+Host: www.test.com
+
+```
 Response:
 ```
 HTTP/1.1 200 OK
@@ -15,13 +21,23 @@ Content-Type: text/html; charset=utf-8
 
 The SOLID design principle includes these five principles:
 #### Single Responsibility Principle
-The Single Responsibility Principle is the most abstract of the bunch. It helps keep classes and methods small and maintainable. In addition to keeping classes small and focused it also makes them easier to understand.
-o	
+In addition to keeping classes small and focused it also makes them easier to understand.
+	
 #### Open/Closed Principle
 The Open/Closed Principle states that classes or methods should be open for extension, but closed for modification. This tells us we should strive for modular designs that make it possible for us to change the behavior of the system without making modifications to the classes themselves. This is generally achieved through the use of patterns such as the strategy pattern. Let’s look at an example of some code that is violating the Open/Closed Principle:
 #### Liskov Substitution Principle
+The principle says that objects of a superclass should be replaceable with objects of its subclasses without breaking the application. That requires the objects of your subclasses to behave in the same way as the objects of your superclass. 
+An overridden method of a subclass needs to accept the same input parameter values as the method of the superclass. That means you can implement less restrictive validation rules, but you are not allowed to enforce stricter ones in your subclass. Otherwise, any code that calls this method on an object of the superclass might cause an exception, if it gets called with an object of the subclass.
+
+Similar rules apply to the return value of the method. The return value of a method of the subclass needs to comply with the same rules as the return value of the method of the superclass. You can only decide to apply even stricter rules by returning a specific subclass of the defined return value, or by returning a subset of the valid return values of the superclass.
+
 #### Interface Segregation Principle
+**Clients should not be forced to depend upon interfaces that they do not use.**
+
 #### Dependency Inversion Principle
+
+### SLAP
+Single Level of Abstraction Principle
 
 ### Parallelism and Concurrency
 Threads

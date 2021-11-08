@@ -2,14 +2,15 @@
  
  
 The SOLID design principle includes these five principles:
-•	Single Responsibility Principle
+### Single Responsibility Principle
 The Single Responsibility Principle is the most abstract of the bunch. It helps keep classes and methods small and maintainable. In addition to keeping classes small and focused it also makes them easier to understand.
 o	
-•	Open/Closed Principle
+### Open/Closed Principle
 The Open/Closed Principle states that classes or methods should be open for extension, but closed for modification. This tells us we should strive for modular designs that make it possible for us to change the behavior of the system without making modifications to the classes themselves. This is generally achieved through the use of patterns such as the strategy pattern. Let’s look at an example of some code that is violating the Open/Closed Principle:
-•	Liskov Substitution Principle
-•	Interface Segregation Principle
-•	Dependency Inversion Principle
+### Liskov Substitution Principle
+### Interface Segregation Principle
+### Dependency Inversion Principle
+
 Threads
 Threads are useful for IO bound applications: DB, API, File system
 Wait for thread – thread.join	

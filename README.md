@@ -23,9 +23,11 @@ The Open/Closed Principle states that classes or methods should be open for exte
 ### Interface Segregation Principle
 ### Dependency Inversion Principle
 
+# Parallelism and Concurrency
 Threads
 Threads are useful for IO bound applications: DB, API, File system
 Wait for thread – thread.join	
+GIL 
 
 ## Ruby
 * Inheritance
@@ -45,8 +47,9 @@ Wait for thread – thread.join
 eql? — Hash e equal? — identity comparison
 equal? Unlike ==, the equal? method should never be overridden by subclasses: it is used to determine object identity (that is, a.equal?(b) iff a is the same object as b). quality
 
-GIL, Threads, inheritance, composition (include vs extends vs prepend)
+inheritance, composition (include vs extends vs prepend)
 
+Algorithms
 
 ```ruby
 def     quicksort(arr, first, last)
@@ -97,21 +100,21 @@ def     quicksort(arr, first, last)
 
 ## DB
 #### Postgres
-Locks
-Transactions
-Indexes
-replication (read, write)
-Sharding and partitioning are both about breaking up a large data set into smaller subsets. Sharding implies the data is spread across multiple computers while partitioning does not. Partitioning is about grouping subsets of data within a single database instance. In many cases, the terms sharding and partitioning are even used synonymously, especially when preceded by the terms “horizontal” and “vertical.” Thus, “horizontal sharding” and “horizontal partitioning” can mean the same thing.
-There are a several principle reasons to partition a table:
-1.	When a table grows so big that searching it becomes impractical even with the help of indexes (which will invariably become too big as well).
-2.	When data management is such that the target data is often the most recently added and/or older data is constantly being purged/archived, or even not being searched anymore (at least not as often).
-3.	If you are loading data from different sources and maintaining it as a data warehousing for reporting and analytics.
-4.	For a less expensive archiving or purging of massive data that avoids exclusive locks on the entire table.
-When should we resort to sharding?
-Here are a couple of classic cases:
+* Locks
+* Transactions
+* Indexes (Hash, B-Tree, GiN, GisT)
+* Replication (read, write)
+* Sharding and partitioning are both about breaking up a large data set into smaller subsets. Sharding implies the data is spread across multiple computers while partitioning does not. Partitioning is about grouping subsets of data within a single database instance. In many cases, the terms sharding and partitioning are even used synonymously, especially when preceded by the terms “horizontal” and “vertical.” Thus, “horizontal sharding” and “horizontal partitioning” can mean the same thing.
+	There are a several principle reasons to partition a table:
+	1.	When a table grows so big that searching it becomes impractical even with the help of indexes (which will invariably become too big as well).
+	2.	When data management is such that the target data is often the most recently added and/or older data is constantly being purged/archived, or even not being searched anymore (at least not as often).
+	3.	If you are loading data from different sources and maintaining it as a data warehousing for reporting and analytics.
+	4.	For a less expensive archiving or purging of massive data that avoids exclusive locks on the entire table.
+	When should we resort to sharding?
+	Here are a couple of classic cases:
 
-1.	To scale out (horizontally), when even after partitioning a table the amount of data is too great or too complex to be processed by a single server.
-2.	Use cases where the data in a big table can be divided into two or more segments that would benefit the majority of the search patterns. A common example used to describe a scenario like this is that of a company whose customers are evenly spread across the United States and searches to a target table involves the customer ZIP code. A shard then could be used to host entries of customers located on the East coast and another for customers on the West coast.
+	1.	To scale out (horizontally), when even after partitioning a table the amount of data is too great or too complex to be processed by a single server.
+	2.	Use cases where the data in a big table can be divided into two or more segments that would benefit the majority of the search patterns. A common example used to describe a scenario like this is that of a company whose customers are evenly spread across the United States and searches to a target table involves the customer ZIP code. A shard then could be used to host entries of customers located on the East coast and another for customers on the West coast.
  
  
 ## Security

@@ -39,6 +39,7 @@ Wait for thread – thread.join
 * N+1
   * Preload loads the association data in a separate query
 
+### Equality
 == At the Object level, == returns true only if obj and other are the same object. Typically, this method is overridden in descendant classes to provide class-specific meaning.
 === For class Object, effectively the same as calling #==, but typically overridden by descendants to provide meaningful semantics in case statements.
 eql? — Hash e equal? — identity comparison

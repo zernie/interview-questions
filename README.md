@@ -2,9 +2,9 @@
  
   
 ### Protocols
-HTTP 80
+**HTTP** 80
 
-HTTPS 443
+**HTTPS** 443
 Handshake -> 
 Request:
 ```
@@ -17,6 +17,12 @@ Response:
 HTTP/1.1 200 OK
 Content-Type: text/html; charset=utf-8
 ```
+
+### Data structures
+**Stack** - **L**ast **I**n, **F**irst **O**ut
+**Hash Table** - collisions and how to solve it (increase dynamically)
+
+
 ### SOLID
 
 The SOLID design principle includes these five principles:

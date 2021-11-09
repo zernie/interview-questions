@@ -35,6 +35,8 @@ Similar rules apply to the return value of the method. The return value of a met
 **Clients should not be forced to depend upon interfaces that they do not use.**
 
 #### Dependency Inversion Principle
+High level modules (or classes) should not depend upon low level modules. Both should depend on abstractions.
+Abstractions should not depend upon details. Details should depend upon abstractions.
 
 ### SLAP
 Single Level of Abstraction Principle
@@ -43,7 +45,7 @@ Single Level of Abstraction Principle
 Threads
 Threads are useful for IO bound applications: DB, API, File system
 Wait for thread – thread.join	
-GIL 
+GIL  thread-safety
 
 ## Ruby
 * Inheritance

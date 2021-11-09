@@ -51,8 +51,9 @@ GIL
   * Include
   * Extends
   * Prepend
-* Polymorphism
-* Incapsulation
+* Polymorphism - when objects of different classes have access to the same interface, they are polymorphic
+* Encapsulation - Protecting access to data and functionality so that these are unavailable to certain parts of the codebase is how we ensure data is only intentionally accessed and correctly manipulated. The data is thus encapsulated, or shielded.
+* Duck typing - If objects A and B are of different classes but they can both respond to a quack instance method, for example, then we can treat both as ducks (hence the name). If it quacks like a duck,…
 
 
 ## Rails
@@ -84,12 +85,15 @@ GIL
   * 
 
 ### Equality
-`==` At the Object level, `==` returns true only if obj and other are the same object. Typically, this method is overridden in descendant classes to provide class-specific meaning.
-`===` For class Object, effectively the same as calling `#==`, but typically overridden by descendants to provide meaningful semantics in case statements.
-`eql?` — Hash e equal? — identity comparison
-`equal?` Unlike ==, the equal? method should never be overridden by subclasses: it is used to determine object identity (that is, `a.equal?(b)` if `a` is the same object as `b`). quality
+`==` – Checks if the value of two operands are equal (often overridden to provide a class-specific definition of equality).
 
-Algorithms
+`===` – Specifically used to test equality within the when clause of a case statement (also often overridden to provide meaningful class-specific semantics in case statements).
+
+`eql?` – Checks if the value and type of two operands are the same (as opposed to the `==` operator which compares values but ignores types). For example, `1 == 1.0` evaluates to true, whereas `1.eql?(1.0)` evaluates to false.
+
+`equal?` – Compares the identity of two objects; i.e., returns `true` if both operands have the same object id (i.e., if they both refer to the same object). Note that this will return `false` when comparing two identical copies of the same object.
+
+### Algorithms
 
 <details>
 <summary>QuickSort</summary>

@@ -53,17 +53,35 @@ GIL
   * Prepend
 * Polymorphism
 * Incapsulation
-* Design pattern
-  * Service objects
-  * Form objects
-  * Fat models
-  * Skinny controllers
-* N+1
-  * Preload loads the association data in a separate query
+
 
 ## Rails
 
 ![image](https://user-images.githubusercontent.com/1765991/140758550-803f72d0-160a-494b-82e5-522b9dbd8b1f.png)
+
+* [Design pattern](https://longliveruby.com/articles/rails-design-patterns-the-big-picture)
+  * Service objects - class that is responsible for doing only one thing
+  * Presenter -  responsible for isolating more advanced logic that is used inside the views
+  * Value objects - plain Ruby class that will be responsible for providing methods that return only values
+  * Decorator - it alters the original class without affecting the original class’s behavior
+  * Policy object 
+  * Builder / adapter - returning a given class or instance depending on the case.
+  * Form objects - useful when you have to check multiple conditions before performing a given action
+  * Query object - isolates the logic for querying the database. We can keep the simple queries inside the model, but we can put more complex queries or group of similar queries inside one separated class
+  * Observer - allows performing a given action each time an event is called on a model. 
+  * Interactor - performs a set of actions one by one. When one of the actions is stopped, then other actions should not be performed. Interactions are similar to transactions, as the rollback of previous actions is also possible.
+  * Null object - provide a value for non-existing records.
+
+  * Fat models 
+  * Skinny controllers
+
+* N+1
+  * `preload` loads the association data in a separate query
+  * `Include` is smart. It switches from using two separate queries to creating a single LEFT OUTER JOIN to get the data.
+  * `eager_load` uses LEFT OUTER JOIN.
+
+
+  * 
 
 ### Equality
 `==` At the Object level, `==` returns true only if obj and other are the same object. Typically, this method is overridden in descendant classes to provide class-specific meaning.

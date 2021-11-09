@@ -20,6 +20,7 @@ Content-Type: text/html; charset=utf-8
 
 ### Data structures
 **Stack** - **L**ast **I**n, **F**irst **O**ut
+
 **Hash Table** - collisions and how to solve it (increase dynamically)
 
 

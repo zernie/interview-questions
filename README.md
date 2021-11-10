@@ -306,3 +306,15 @@ GIL  thread-safety
 * NFT
   - Lazy Minting
 
+## Project management
+* Agile -  framework that takes an iterative approach towards the completion of a project. Continuous involvement with the client is necessary to ensure that the expectations are aligned and to allow the project manager to adapt to changes throughout the process. 
+  * Scrum - project team, led by the project manager, consists of a product owner, Scrum master, and other cross-functional team members. The product owner is responsible for maximizing the value of the product, while the Scrum master is accountable for ensuring that the project team follows the Scrum methodology.
+The Scrum methodology is characterized by short phases or “sprints” when project work occurs. During sprint planning, the project team identifies a small part of the scope to be completed during the upcoming sprint, which is usually a two to four week period of time. 
+
+At the end of the sprint, this work should be ready to be delivered to the client. Finally, the sprint ends with a sprint review and retrospective—or rather, lessons learned. This cycle is repeated throughout the project lifecycle until the entirety of the scope has been delivered.
+  * Kanban - type of Agile methodology that seeks to improve the project management process through workflow visualization using a tool called a Kanban board. A Kanban board is composed of columns that depict a specific stage in the project management process, with cards or sticky notes representing tasks placed in the appropriate stage. As the project progresses, the cards will move from column to column on the board until they are completed.
+* Agile vs Scrum
+	* Agile is a philosophy, whereas Scrum is a type of Agile methodology
+        * Scrum is broken down into shorter sprints and smaller deliverables, while in Agile everything is delivered at the end of the project
+        * Agile involves members from various cross-functional teams, while a Scrum project team includes specific roles, such as the Scrum Master and Product Owner
+* Waterfall

@@ -28,6 +28,73 @@ One method for resolving collisions looks into the hash table and tries to find 
 An alternative method for handling the collision problem is to allow each slot to hold a reference to a collection (or chain) of items. Chaining allows many items to exist at the same location in the hash table. When collisions happen, the item is still placed in the proper slot of the hash table. As more and more items hash to the same location, the difficulty of searching for the item in the collection increases
 ![image](https://user-images.githubusercontent.com/1765991/140931652-3c19c8e3-233b-4a6b-a919-565b865e6654.png)
 
+### Algorithms
+<details>
+	
+```
+	function convertArrayToTree(arr: number[], left: number?, right: number?) {
+	  if (!left && !right) {
+	   convertArrayToTree(arr, 0, arr.length - 1);
+	  }
+
+	  if (left > right) return null;
+
+	  const medium = Math.ceil(left + right) / 2;
+	  const node = new TreeNode(arr[medium], );
+	  node.left = convertArrayToTree(arr, left, medium - 1);
+	  node.right = convertArrayToTree(arr, medium +1, right );
+
+
+	  return  node
+	}
+
+	TC - O(N)
+	SC - O(logN)
+
+	[-10,-3,0,5,9]
+	// left=0, right=4, medium=(0 + 4)/2=2
+	  // left=0, right=1, medium=(0 + 1)/2=1
+	    // medium = (0+1)/1, left = 0,right=1
+	  // left= 3, right=4
+	```
+</details>
+
+
+
+<details>
+	
+```
+Convert to different base
+calculate remainder
+add remainder to sum
+return sum
+https://leetcode.com/problems/sum-of-digits-in-base-k/
+
+
+function calculate(n, k) {
+  let sum = 0;
+
+  while(n > 0) {
+    const remainder = n % k;
+    sum += remainder;
+    n = Math.floor(n / k);
+	}
+
+
+	return sum;
+}
+
+n= 34, k = 6
+sum = 0; remainder = 34 % 6 = 4, sum = 4, n = 34 / 6 = 5 
+sum = 4; remainder = 5 % 6 = 5; sum = 4+5=9; n=⅚=0
+
+TC - O(log(k)N)
+
+34 % 6 = 34 - 6*5 = 4
+1 % 6 = 1 - 6*0 = 1
+```
+
+</details>
 
 ### SOLID
 

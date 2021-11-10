@@ -254,5 +254,9 @@ GIL  thread-safety
  
 ## Blockchain
  
-DAO
+* Web3.js
+  * Ethers
+* DAO
+* NFT
+  - Lazy Minting
 

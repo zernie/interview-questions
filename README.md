@@ -56,7 +56,7 @@ An alternative method for handling the collision problem is to allow each slot t
 	  // left=0, right=1, medium=(0 + 1)/2=1
 	    // medium = (0+1)/1, left = 0,right=1
 	  // left= 3, right=4
-	```
+```
 
 </details>
 
@@ -65,34 +65,34 @@ An alternative method for handling the collision problem is to allow each slot t
 <details>
 	
 ```
-Convert to different base
-calculate remainder
-add remainder to sum
-return sum
-https://leetcode.com/problems/sum-of-digits-in-base-k/
+	Convert to different base
+	calculate remainder
+	add remainder to sum
+	return sum
+	https://leetcode.com/problems/sum-of-digits-in-base-k/
 
 
-function calculate(n, k) {
-  let sum = 0;
+	function calculate(n, k) {
+	  let sum = 0;
 
-  while(n > 0) {
-    const remainder = n % k;
-    sum += remainder;
-    n = Math.floor(n / k);
+	  while(n > 0) {
+	    const remainder = n % k;
+	    sum += remainder;
+	    n = Math.floor(n / k);
+		}
+
+
+		return sum;
 	}
 
+	n= 34, k = 6
+	sum = 0; remainder = 34 % 6 = 4, sum = 4, n = 34 / 6 = 5 
+	sum = 4; remainder = 5 % 6 = 5; sum = 4+5=9; n=⅚=0
 
-	return sum;
-}
+	TC - O(log(k)N)
 
-n= 34, k = 6
-sum = 0; remainder = 34 % 6 = 4, sum = 4, n = 34 / 6 = 5 
-sum = 4; remainder = 5 % 6 = 5; sum = 4+5=9; n=⅚=0
-
-TC - O(log(k)N)
-
-34 % 6 = 34 - 6*5 = 4
-1 % 6 = 1 - 6*0 = 1
+	34 % 6 = 34 - 6*5 = 4
+	1 % 6 = 1 - 6*0 = 1
 ```
 
 </details>

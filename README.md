@@ -57,6 +57,7 @@ An alternative method for handling the collision problem is to allow each slot t
 	    // medium = (0+1)/1, left = 0,right=1
 	  // left= 3, right=4
 	```
+
 </details>
 
 

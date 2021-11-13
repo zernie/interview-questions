@@ -342,7 +342,7 @@ GIL  thread-safety
 	Level: Medium
 
 	1. What Geth startup option allows client applications to interact remotely with Solidity contracts? What parts of it can make this interaction secure?
-Start Geth with “--rpc” and specify which api’s can be called (-- rpcapi “eth, net, web3”).
+	Start Geth with “--rpc” and specify which api’s can be called (-- rpcapi “eth, net, web3”).
 
 	2. What are hash functions? Can you mention 2 of their properties? How are they used in Ethereum?
 Hash functions are mathematical algorithms that map arbitrary size input data to fixed size output bit string; they are deterministic (the same input always gives the same output), have an avalanche effect (small change in input; causes a big change in output). It’s used to link blocks to each other (among many other things).

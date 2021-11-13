@@ -308,6 +308,7 @@ GIL  thread-safety
 	
 	
 <details>
+
 	1. What differentiates a common transaction from a contract deployment transaction?
 	The “to” field is missing and the “data” one is present.
 
@@ -361,10 +362,10 @@ Chain ID, difficulty, coinbase, preallocated Ether to some accounts, a nonce.
 	7. What transaction attributes/values let you know that it hasn’t’ been mined yet?
 Its blockHash, blockNumber, and transactionIndex are all zeros.
 
-	8. What costs more gas to save in storage, uint8 or uint256, and why?
-Uint8 costs more because the EVM works with 32 bytes stack elements and 32 bytes storage slots so when you have uint8 (1 byte) then further operations are required to downscale and optimize storage.
+	8. What costs more gas to save in storage, `uint8` or `uint256`, and why?
+Uint8 costs more because the EVM works with 32 bytes stack elements and 32 bytes storage slots so when you have `uint8` (1 byte) then further operations are required to downscale and optimize storage.
 
-	9. What’s better to use for a short text? Bytes32 or string, and why?
+	9. What’s better to use for a short text? `Bytes32` or string, and why?
 Bytes32 because it fits in a single word in the EVM, while string is a dynamic array which consumes more gas for initial storage allocation and further expansions.
 
 	10. Mention some of the functions that a contract should have to be an ERC-20 token contract.
@@ -380,14 +381,14 @@ Greedy Heaviest Observed Subtree protocol takes in consideration the weights of 
 It’s calculated from a hash of the sender’s address and the transaction nonce.
 The deployed code is shorter because the constructor is only run on deployment and we don’t need to store it; plus there is the piece of code that unpacks and directs the EVM to the final bytecode.
 
-	3. In which circumstances would you use the new CREATE2 opcode to deploy a contract?
+	3. In which circumstances would you use the new `CREATE2` opcode to deploy a contract?
 When you need to know the address that the future contract with a certain bytecode will use before actually deploying it.
 
 	4. If your contract is inheriting from 2 contracts that have the same function; which contract wins (i.e. when you call that function by name; from which parent contract will it be called)?
 The right most contract in the mentioned inheritance list (e.g. contract child is parent1, parent2; parent2 wins).
 
 	5. If you want to use delegateCall to call an interface function; how do you calculate the function signature?
-It’s the first 4 bytes of the keccak256 hash of its canonical signature, or theInstance.theFunction.selector.
+It’s the first 4 bytes of the `keccak256` hash of its canonical signature, or `theInstance.theFunction.selector`.
 
 	6. Why should tx.origin be avoided?
 An attacking contract can trick the victim contract to send it some Ether, then inside its fallback function they can call the victim’s function that uses tx.origin as a check; and it will pass that check because in this case the tx.origin is the victim contract that sent the Ether in the first place which in turn called that function!
@@ -397,7 +398,7 @@ For external calls the compiler doesn’t expect internal calls so it doesn’t 
 
 	8. Which struct consumes more space, and why?
 
-MyStructB consumes more space because structs are packed tightly meaning their attributes are packed into 32 byte words in sequence so in MyStructA param1 + param2 fit into one word (i.e. 32 bytes) so the entire struct (param1+param2+param3) fits into 2 words, while in MyStructB param1+param2 takes 2 words so the total (param1+param2+param3) takes 3 words.
+MyStructB consumes more space because structs are packed tightly meaning their attributes are packed into 32 byte words in sequence so in MyStructA `param1 + param2` fit into one word (i.e. 32 bytes) so the entire struct (param1+param2+param3) fits into 2 words, while in `MyStructB` `param1+param2` takes 2 words so the total (`param1+param2+param3`) takes 3 words.
 
 	9. How can you send Ether to a contract that doesn’t accept Ether (i.e. there is no fallback function or the fallback function always reverts)?
 Use selfdestruct, because it doesn’t execute the fallback function.

@@ -305,6 +305,10 @@ GIL  thread-safety
 * DAO
 * NFT
   - Lazy Minting
+  - SFT
+* Diamond Standard
+* Degraph
+* TreeBox
 	
 	
 <details>

@@ -1,5 +1,45 @@
 ## General
- 
+ Ernie, [09.11.2021 22:25]
+Hey! I have 5.5 years of experience as a fullstack developer, built a few successful projects in RoR that have raised 3.000.000+ millions in investments.
+
+Most of my employers have been a North American-based startups, so I'm very comfortable with working in remote, fast-paced environment.
+
+I love TypeScript, that is why I was tasked with refactoring thousands lines of legacy codebase in busbud.com, the world's largest bus tickets marketplace. And I built a Hearthstone card game clone in TS, React & Redux that you can find on my GitHub.
+
+Would love to have a chat with you!
+
+Ernie, [09.11.2021 22:28]
+Hey! I have 5.5 years of experience as a fullstack developer, built a few successful projects in RoR that have raised 3.000.000+ millions in investments.
+
+Most of my employers have been a North American-based startups, so I'm very comfortable with working in remote, fast-paced environment.
+
+I love TypeScript, that is why I was tasked with refactoring thousands lines of legacy codebase in busbud.com, the world's largest bus tickets marketplace. And I built a Hearthstone card game clone in TS, React & Redux that you can find on my GitHub.
+
+In the future, I'd like to move to into some managerial position, or perhaps even have my own startup. That is 've been trying to improve my soft skills recently. This year, I got hired as a CTO of a local online recruitment agency and won a free entrepreneurship exchange program from U.S. State Dept.
+
+Would love to have a chat with you!
+
+Ernie, [09.11.2021 22:58]
+Hey! I have 5.5 years of experience as a fullstack developer. I built a few successful projects from scratch; one of them, a blockchain startup, for which I solo developed a web dashboard, have raised 3.000.000+ millions in investments during its ICO.
+
+Most of my employers have been a North American-based startups, so I'm very comfortable with working in remote, fast-paced environment.
+
+I love TypeScript, that is why I was tasked with refactoring thousands lines of legacy codebase in busbud.com, the world's largest bus tickets marketplace. And I built a Hearthstone card game clone in TS, React & Redux that you can find on my GitHub.
+
+
+Would love to have a chat with you!
+
+### My pros
+Taking responsibility
+Full Stack
+
+### My Cons
+Security
+Algorithms
+
+### Company Culture
+### Startup Pros
+### Startup cons
   
 ### Protocols
 **HTTP** 80
@@ -141,6 +181,9 @@ An alternative method for handling the collision problem is to allow each slot t
 ```
 
 </details>
+
+### Event Sourcing
+123
 
 ### SOLID
 

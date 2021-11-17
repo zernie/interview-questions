@@ -1,5 +1,5 @@
 ## General
- Ernie, [09.11.2021 22:25]
+### 1
 Hey! I have 5.5 years of experience as a fullstack developer, built a few successful projects in RoR that have raised 3.000.000+ millions in investments.
 
 Most of my employers have been a North American-based startups, so I'm very comfortable with working in remote, fast-paced environment.
@@ -8,7 +8,7 @@ I love TypeScript, that is why I was tasked with refactoring thousands lines of 
 
 Would love to have a chat with you!
 
-Ernie, [09.11.2021 22:28]
+### 2
 Hey! I have 5.5 years of experience as a fullstack developer, built a few successful projects in RoR that have raised 3.000.000+ millions in investments.
 
 Most of my employers have been a North American-based startups, so I'm very comfortable with working in remote, fast-paced environment.
@@ -19,7 +19,7 @@ In the future, I'd like to move to into some managerial position, or perhaps eve
 
 Would love to have a chat with you!
 
-Ernie, [09.11.2021 22:58]
+### 2
 Hey! I have 5.5 years of experience as a fullstack developer. I built a few successful projects from scratch; one of them, a blockchain startup, for which I solo developed a web dashboard, have raised 3.000.000+ millions in investments during its ICO.
 
 Most of my employers have been a North American-based startups, so I'm very comfortable with working in remote, fast-paced environment.
@@ -252,8 +252,6 @@ GIL  thread-safety
   * `eager_load` uses LEFT OUTER JOIN.
 
 
-  * 
-
 ### Equality
 `==` – Checks if the value of two operands are equal (often overridden to provide a class-specific definition of equality).
 
@@ -454,6 +452,12 @@ Use selfdestruct, because it doesn’t execute the fallback function.
 
 	If your function relies on calling extcodesize; you can have another contract call this function from their constructor. When the attacking contract is being deployed and the constructor is called; the address of the contract at that stage still doesn’t have any bytecode attached to it so extcodesize will return 0.
 </details>
+
+## RabbitMQ
+
+## Redis
+ - caching
+ - TTL
 
 ## Project management
 * Agile -  framework that takes an iterative approach towards the completion of a project. Continuous involvement with the client is necessary to ensure that the expectations are aligned and to allow the project manager to adapt to changes throughout the process. 

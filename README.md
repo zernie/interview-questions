@@ -411,7 +411,7 @@ Use selfdestruct, because it doesn’t execute the fallback function.
 ## RabbitMQ
 
 ## Redis
- - caching
+ - Caching
  - TTL
 
 ## Frontend
@@ -422,6 +422,8 @@ Use selfdestruct, because it doesn’t execute the fallback function.
   - bind(this, []) - creates new function
   - apply(this, [args]) 
   - call(this, ...args) 
+- Iterators
+- Generators
 
 ### JWT
 JSON Web Token (JWT) — содержит три блока, разделенных точками: заголовок(header), набор полей (payload) и сигнатуру. Первые два блока представлены в JSON-формате и дополнительно закодированы в формат base64. Набор полей содержит произвольные пары имя/значения, притом стандарт JWT определяет несколько зарезервированных имен (iss, aud, exp и другие). Сигнатура может генерироваться при помощи и симметричных алгоритмов шифрования, и асимметричных. Кроме того, существует отдельный стандарт, отписывающий формат зашифрованного JWT-токена.
@@ -469,9 +471,9 @@ refresh токен храним исключительно в httpOnly куке
 Добавьте в компанию ко всему CSP заголовки и SameSite=Strict флаг для кук и ждите прихода злодеев
 
 ### React
-  - hooks
-  - memo
-  - shallow comparison
+  - VirtualDOM
+  - Hooks
+  - Shallow comparison
   - SSR
 
 ## Project management

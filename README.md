@@ -408,24 +408,54 @@ Use selfdestruct, because it doesn’t execute the fallback function.
 	If your function relies on calling extcodesize; you can have another contract call this function from their constructor. When the attacking contract is being deployed and the constructor is called; the address of the contract at that stage still doesn’t have any bytecode attached to it so extcodesize will return 0.
 </details>
 
-## RabbitMQ
+## Backend
+	
+### RabbitMQ
 
-## Redis
+### Redis
  - Caching
  - TTL
 
+### Apollo
+- Apollo Server
+- Apollo Client
+- Apollo Foundation
+
+	
+### Aws
+  - S3
+  - Lambda
+  - SQS
+
+### Microservices
+- Pros
+- Cons
+- How to do it
+	
+	
 ## Frontend
-### JS
+## JS
 - Event loop
-  - setTimeout
+  - `setTimeout`
 - this
   - arrow functions
-  - bind(this, []) - creates new function
-  - apply(this, [args]) 
-  - call(this, ...args) 
+  - `bind(this, [])` - creates new function
+  - `apply(this, [args]) `
+  - `call(this, ...args) `
+- Promises
+	- resolve
+	- reject
+	- then
+	- catch
 - Iterators
 - Generators
+- Proxy
+  - Immer
 
+### Redux
+- Thunk
+- Saga
+-
 ### JWT
 JSON Web Token (JWT) — содержит три блока, разделенных точками: заголовок(header), набор полей (payload) и сигнатуру. Первые два блока представлены в JSON-формате и дополнительно закодированы в формат base64. Набор полей содержит произвольные пары имя/значения, притом стандарт JWT определяет несколько зарезервированных имен (iss, aud, exp и другие). Сигнатура может генерироваться при помощи и симметричных алгоритмов шифрования, и асимметричных. Кроме того, существует отдельный стандарт, отписывающий формат зашифрованного JWT-токена.
 
@@ -506,3 +536,6 @@ At the end of the sprint, this work should be ready to be delivered to the clien
         * Scrum is broken down into shorter sprints and smaller deliverables, while in Agile everything is delivered at the end of the project
         * Agile involves members from various cross-functional teams, while a Scrum project team includes specific roles, such as the Scrum Master and Product Owner
 * Waterfall
+
+Canary release
+CI/CD

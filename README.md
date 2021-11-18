@@ -523,6 +523,20 @@ Set-Cookie: refreshToken='c84f18a2-c6c7-4850-be15-93f9cbaef3b3'; HttpOnly // Ð´Ð
   - Hooks
   - Shallow comparison
   - SSR
+  - When re-render
+    - `memo`
+  - hooks pros&cons
+  - CSS
+	- CSS Modules
+	- styles-components
+  - Libs 
+    - `redux`
+	- `redux-toolkit`
+	- `redux-thunk`
+	- `redux-saga`
+    - `effector`
+    - `immer`
+    - `react-spring`
 
 ## Project management
 * Agile -  framework that takes an iterative approach towards the completion of a project. Continuous involvement with the client is necessary to ensure that the expectations are aligned and to allow the project manager to adapt to changes throughout the process. 

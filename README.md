@@ -67,9 +67,25 @@ One method for resolving collisions looks into the hash table and tries to find 
 ![image](https://user-images.githubusercontent.com/1765991/140930915-bcd0740b-c29b-4feb-93d2-228b9327325c.png)
 An alternative method for handling the collision problem is to allow each slot to hold a reference to a collection (or chain) of items. Chaining allows many items to exist at the same location in the hash table. When collisions happen, the item is still placed in the proper slot of the hash table. As more and more items hash to the same location, the difficulty of searching for the item in the collection increases
 ![image](https://user-images.githubusercontent.com/1765991/140931652-3c19c8e3-233b-4a6b-a919-565b865e6654.png)
+**Tree** - 
+  **Binary Tree** - A tree whose elements have at most 2 children is called a binary tree. Since each element in a binary tree can have only 2 children, we typically name them the left and right child.
+
 
 
 ### Algorithms
+<details>
+	<summary>Sort a multi dimensional array by one of the sub-elements.</summary>
+
+	```
+	  var arr = [.....]
+	  arr.sort((function(index){
+	    return function(a, b){
+	      return (a[index] === b[index] ? 0 : (a[index] < b[index] ? -1 : 1));
+	    };
+	  })
+	```
+</details>
+	
 <details>
 	<summary>Secret Santa</summary>
 	```

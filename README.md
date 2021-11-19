@@ -88,6 +88,7 @@ An alternative method for handling the collision problem is to allow each slot t
 	
 <details>
   <summary>Secret Santa</summary>
+
 ```js
 	var people = ['aaa', 'bbb', 'ccc', 'ddd', 'eee'];
 
@@ -137,9 +138,9 @@ console.log(pair(people));
 		console.log(name1 + ' gets ' + name2);
 	    }
 	}
-	```
+```
 
-	```python
+```python
 		import random
 	import pandas as pd
 
@@ -160,7 +161,8 @@ console.log(pair(people));
 
 	if __name__ == '__main__':
 	    main()
-	```
+```
+
 </details>
 
 <details>

@@ -88,28 +88,29 @@ An alternative method for handling the collision problem is to allow each slot t
 	
 <details>
 	<summary>Secret Santa</summary>
-```
-var names = ["Sean","Kyle","Emily","Nick","Cotter","Brian","Jeremy","Kimmy","Pat","Johnny"];
 
-if (names.length % 2 != 0) {
-    alert("You must have an even number of names. You currently have " + names.length + " names.");
-} else {
-    var arr1 = names.slice(), // copy array
-        arr2 = names.slice(); // copy array again
+	```
+	var names = ["Sean","Kyle","Emily","Nick","Cotter","Brian","Jeremy","Kimmy","Pat","Johnny"];
 
-    arr1.sort(function() { return 0.5 - Math.random();}); // shuffle arrays
-    arr2.sort(function() { return 0.5 - Math.random();});
+	if (names.length % 2 != 0) {
+	    alert("You must have an even number of names. You currently have " + names.length + " names.");
+	} else {
+	    var arr1 = names.slice(), // copy array
+		arr2 = names.slice(); // copy array again
 
-    while (arr1.length) {
-        var name1 = arr1.pop(), // get the last value of arr1
-            name2 = arr2[0] == name1 ? arr2.pop() : arr2.shift();
-            //        ^^ if the first value is the same as name1, 
-            //           get the last value, otherwise get the first
+	    arr1.sort(function() { return 0.5 - Math.random();}); // shuffle arrays
+	    arr2.sort(function() { return 0.5 - Math.random();});
 
-        console.log(name1 + ' gets ' + name2);
-    }
-}
-```
+	    while (arr1.length) {
+		var name1 = arr1.pop(), // get the last value of arr1
+		    name2 = arr2[0] == name1 ? arr2.pop() : arr2.shift();
+		    //        ^^ if the first value is the same as name1, 
+		    //           get the last value, otherwise get the first
+
+		console.log(name1 + ' gets ' + name2);
+	    }
+	}
+	```
 
 	```
 		import random

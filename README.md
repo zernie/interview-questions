@@ -88,8 +88,35 @@ An alternative method for handling the collision problem is to allow each slot t
 	
 <details>
   <summary>Secret Santa</summary>
+```js
+	var people = ['aaa', 'bbb', 'ccc', 'ddd', 'eee'];
 
-	```js
+var pair = function(arr) {
+  var result = [];
+  var recipients = arr.slice();
+  var len = arr.length;
+  for (var i = 0; i < len; i++) {
+    var sender = arr[i];		
+    var recipientIndex = Math.floor(Math.random() * recipients.length);
+    while (recipients[recipientIndex] === sender) {
+    	// Can't send gift to myself
+      recipientIndex = Math.floor(Math.random() * recipients.length);
+    }
+    var recipient = recipients.splice(recipientIndex, 1)[0];
+    result.push({
+      sender: sender,
+      receiver: recipient
+    });
+  }
+  return result;
+};
+
+// 
+console.log(pair(people));
+
+```
+
+```js
 	var names = ["Sean","Kyle","Emily","Nick","Cotter","Brian","Jeremy","Kimmy","Pat","Johnny"];
 
 	if (names.length % 2 != 0) {

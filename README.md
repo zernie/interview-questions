@@ -87,9 +87,9 @@ An alternative method for handling the collision problem is to allow each slot t
 </details>
 	
 <details>
-	<summary>Secret Santa</summary>
+  <summary>Secret Santa</summary>
 
-	```
+	```js
 	var names = ["Sean","Kyle","Emily","Nick","Cotter","Brian","Jeremy","Kimmy","Pat","Johnny"];
 
 	if (names.length % 2 != 0) {
@@ -112,7 +112,7 @@ An alternative method for handling the collision problem is to allow each slot t
 	}
 	```
 
-	```
+	```python
 		import random
 	import pandas as pd
 

@@ -60,7 +60,7 @@ Content-Type: text/html; charset=utf-8
 
 ### Data structures
 **Stack** - **L**ast **I**n, **F**irst **O**ut
-
+**Queue** - **F**irst-**i**n **F**irst-**o**ut
 **Hash Table** -  hash table is a collection of items which are stored in such a way as to make it easy to find them later.
 Collision Resolution
 One method for resolving collisions looks into the hash table and tries to find another open slot to hold the item that caused the collision. A simple way to do this is to start at the original hash value position and then move in a sequential manner through the slots until we encounter the first slot that is empty. Note that we may need to go back to the first slot (circularly) to cover the entire hash table. This collision resolution process is referred to as **open addressing** in that it tries to find the next open slot or address in the hash table. By systematically visiting each slot one at a time, we are performing an open addressing technique called linear probing.
@@ -68,7 +68,34 @@ One method for resolving collisions looks into the hash table and tries to find 
 An alternative method for handling the collision problem is to allow each slot to hold a reference to a collection (or chain) of items. Chaining allows many items to exist at the same location in the hash table. When collisions happen, the item is still placed in the proper slot of the hash table. As more and more items hash to the same location, the difficulty of searching for the item in the collection increases
 ![image](https://user-images.githubusercontent.com/1765991/140931652-3c19c8e3-233b-4a6b-a919-565b865e6654.png)
 
+
 ### Algorithms
+<details>
+	<summary>Secret Santa</summary>
+	```
+		import random
+	import pandas as pd
+
+	def compare(list_of_names, list_of_emails):
+	    zipped_lists = list(zip(list_of_emails, list_of_names))
+	    random.shuffle(zipped_lists)  # shuffle list of emails and names
+	    result = []
+	    shuffled_emails = [i[0] for i in zipped_lists]
+	    for i, _ in enumerate(shuffled_emails):
+		result.append(zipped_lists[i-1][1])  # shift email relatively one position to the right
+	    return list(zip(result, shuffled_emails))
+
+	def main():
+	    names  = ["John", "Bob", "Alice"]
+	    emails = ["John@gmail.com", "Bob@gmail.com", "Alice@outlook.com"]
+
+	    print(compare(names,emails))
+
+	if __name__ == '__main__':
+	    main()
+	```
+</details>
+
 <details>
 	
 ```

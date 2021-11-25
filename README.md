@@ -397,7 +397,8 @@ GIL  thread-safety
   * `preload` loads the association data in a separate query
   * `Include` is smart. It switches from using two separate queries to creating a single LEFT OUTER JOIN to get the data.
   * `eager_load` uses LEFT OUTER JOIN.
-
+* Sidekiq
+	  
 
 ### Equality
 `==` – Checks if the value of two operands are equal (often overridden to provide a class-specific definition of equality).

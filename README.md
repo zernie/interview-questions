@@ -524,10 +524,12 @@ GIL  thread-safety
  
  
 ## Security
-* XSS
-* Cross-Site Request Forgery (CSRF) is an attack that allows a malicious user to spoof legitimate requests to your server, masquerading ...
-
- 
+* **XSS**
+* **Cross-Site Request Forgery (CSRF)** is an attack that allows a malicious user to spoof legitimate requests to your server, masquerading as an authenticated user. Rails protects against this kind of attack by generating unique tokens and validating their authenticity with each submission.
+<details>
+	There are two components to CSRF. First, a unique token is embedded in your site's HTML. That same token is also stored in the session cookie. When a user makes a POST request, the CSRF token from the HTML gets sent with that request. Rails compares the token from the page with the token from the session cookie to ensure they match.
+</details>
+			  
 ## Blockchain
  
 * Web3.js

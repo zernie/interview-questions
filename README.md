@@ -1,12 +1,13 @@
 ## General
 ### 1
-Hey! I have 7 years of experience as a fullstack developer and a product manager, built a few successful projects that have raised millions of dollars in investments.
+Hey there! With 7 years under my belt as a fullstack developer and product manager, I've had the chance to work on some pretty cool projects that have even brought in millions in investments.
+I've mostly worked with North American startups, so I'm no stranger to remote and fast-paced work environments.
 
-Most of my employers have been a North American-based startups, so I'm very comfortable with working in remote, fast-paced environment.
+One thing you should know about me is that I'm a huge fan of TypeScript.
+In fact, I had the opportunity to tackle a massive refactoring project for busbud.com (the world's largest bus ticket marketplace) using it.
+And if you want to check out something I built just for fun, I created a Hearthstone card game clone using TypeScript, React & Redux on my GitHub.
 
-I love TypeScript, that is why I was tasked with refactoring thousands lines of legacy codebase in busbud.com, the world's largest bus tickets marketplace. And I built a Hearthstone card game clone in TS, React & Redux that you can find on my GitHub.
-
-Would love to have a chat with you!
+I'd love to chat more and see how I can bring my skills to your team.
 
 ### 2
 Hey! I have 7 years of experience as a fullstack developer, built a few successful projects that have raised 3.000.000+ millions in investments.
@@ -673,8 +674,12 @@ Use selfdestruct, because it doesn’t execute the fallback function.
 ## Frontend
 ## JS
 - Event loop
+ - 
   - `setTimeout`
-- this
+  - Promises
+    - Always executed asynchronously
+    - Put into microtasks queue (FIFO)
+- `this`
   - arrow functions
   - `bind(this, [])` - creates new function
   - `apply(this, [args]) `

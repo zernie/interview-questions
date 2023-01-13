@@ -1,6 +1,6 @@
 ## General
 ### 1
-Hey! I have 5.5 years of experience as a fullstack developer, built a few successful projects in RoR that have raised 3.000.000+ millions in investments.
+Hey! I have 7 years of experience as a fullstack developer and a product manager, built a few successful projects that have raised millions of dollars in investments.
 
 Most of my employers have been a North American-based startups, so I'm very comfortable with working in remote, fast-paced environment.
 
@@ -9,7 +9,7 @@ I love TypeScript, that is why I was tasked with refactoring thousands lines of 
 Would love to have a chat with you!
 
 ### 2
-Hey! I have 5.5 years of experience as a fullstack developer, built a few successful projects in RoR that have raised 3.000.000+ millions in investments.
+Hey! I have 7 years of experience as a fullstack developer, built a few successful projects that have raised 3.000.000+ millions in investments.
 
 Most of my employers have been a North American-based startups, so I'm very comfortable with working in remote, fast-paced environment.
 
@@ -20,7 +20,7 @@ In the future, I'd like to move to into some managerial position, or perhaps eve
 Would love to have a chat with you!
 
 ### 2
-Hey! I have 5.5 years of experience as a fullstack developer. I built a few successful projects from scratch; one of them, a blockchain startup, for which I solo developed a web dashboard, have raised 3.000.000+ millions in investments during its ICO.
+Hey! I have 7 years of experience as a fullstack developer. I built a few successful projects from scratch; one of them, a blockchain startup, for which I solo developed a web dashboard, have raised 3.000.000+ millions in investments during its ICO.
 
 Most of my employers have been a North American-based startups, so I'm very comfortable with working in remote, fast-paced environment.
 
@@ -734,6 +734,17 @@ console.log(result); // 48
 ```
 - Proxy
   - Immer
+  
+
+### Prototypes
+  <img width="804" alt="Screenshot 2023-01-13 at 23 37 27" src="https://user-images.githubusercontent.com/1765991/212414669-ea25cb6b-1560-4edb-9667-4ea8d5fc8eae.png">
+
+- Values `null` and `undefined` have no object wrappers
+As we remember, they are not objects. But if we try to access their properties, temporary wrapper objects are created using built-in constructors String, Number and Boolean. They provide the methods and disappear.
+
+- `strings, numbers and booleans` - These objects are created invisibly to us and most engines optimize them out, but the specification describes it exactly this way. Methods of these objects also reside in prototypes, available as String.prototype, Number.prototype and Boolean.prototype.
+
+
 
 ### Redux
 - Thunk

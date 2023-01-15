@@ -673,12 +673,37 @@ Use selfdestruct, because it doesn’t execute the fallback function.
 	
 ## Frontend
 ## JS
-- Event loop
- - 
-  - `setTimeout`
-  - Promises
-    - Always executed asynchronously
-    - Put into microtasks queue (FIFO)
+- Event loop (FIFO)
+  - 1. Dequeue and run the oldest task from the macrotask queue (e.g. “script”).
+    2. Execute all microtasks:
+    3. While the microtask queue is not empty:
+    4. Dequeue and run the oldest microtask.
+    5. Render changes if any.
+    6. If the macrotask queue is empty, wait till a macrotask appears.
+    7. Go to step 1.
+  - Microtasks 
+  - Macrotasks
+    - `queueMicrotask`
+    - `Promise`
+      - Always executed asynchronously
+  - Example:
+    ```
+    console.log(1);
+    
+    setTimeout(() => console.log(2));
+    
+    Promise.resolve().then(() => console.log(3));
+    
+    Promise.resolve().then(() => setTimeout(() => console.log(4)));
+    
+    Promise.resolve().then(() => console.log(5));
+    
+    setTimeout(() => console.log(6));
+    
+    console.log(7);
+    // The console output is: 1 7 3 5 2 6 4.
+    ```
+
 - `this`
   - arrow functions
   - `bind(this, [])` - creates new function

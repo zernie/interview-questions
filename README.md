@@ -862,6 +862,16 @@ Set-Cookie: refreshToken='c84f18a2-c6c7-4850-be15-93f9cbaef3b3'; HttpOnly // Ð´Ð
     - `immer`
     - `react-spring`
 
+### Caching
+
+**CPU**:
+L1
+L2
+L3
+
+Kafka - retention policy
+	
+	
 ## Project management
 * Agile -  framework that takes an iterative approach towards the completion of a project. Continuous involvement with the client is necessary to ensure that the expectations are aligned and to allow the project manager to adapt to changes throughout the process. 
   * Scrum - project team, led by the project manager, consists of a product owner, Scrum master, and other cross-functional team members. The product owner is responsible for maximizing the value of the product, while the Scrum master is accountable for ensuring that the project team follows the Scrum methodology.
